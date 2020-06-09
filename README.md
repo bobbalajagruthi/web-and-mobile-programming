@@ -1,7 +1,5 @@
 # web-and-mobile-programming
-## About my Repository
-### " web-and-mobile-computing"
-#### ICP_1
+### ICP_1
 <br>
 In this repository i have created a folder named "ICP_1".
 In this ICP_1 folder, i have created 2 more folders i.e: source and documentation.
