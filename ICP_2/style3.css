@@ -1,0 +1,57 @@
+.grid {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 70px 70px 70px;
+    grid-column-gap: 80px;
+    grid-row-gap: 10px;
+    padding-left: 35%;
+}
+
+.a {
+    background-color: violet;
+    padding: 70px;
+}
+
+.b {
+    background-color: indigo;
+    padding: 70px;
+}
+
+.c {
+    background-color: blue;
+    padding: 70px;
+}
+
+.d {
+    background-color: green;
+    padding: 70px;
+}
+
+.e {
+    background-color: yellow;
+    padding: 70px;
+}
+
+.f {
+    background-color: orange;
+    padding: 70px;
+}
+
+.g {
+    background-color: red;
+    padding: 70px;
+}
+
+.h {
+    background-color: pink;
+    padding: 70px;
+}
+
+.i {
+    background-color: grey;
+    padding: 70px;
+}
+
+.h1 {
+    text-align: center;
+}
