@@ -1,0 +1,86 @@
+* {
+    background-color: skyblue;
+}
+
+header {
+    padding: 30px;
+}
+
+header>h1 {
+    color: black;
+    text-align: center;
+    font-family: "Rambla";
+}
+
+.scores {
+    width: 300px;
+    text-align: center;
+    color: blue;
+    padding-left: 1000px;
+    font-family: "Rambla";
+}
+
+.button {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    padding-left: 20%;
+}
+
+.Buttons {
+    text-align: center;
+}
+
+.Computer {
+    padding-top: 5px;
+    text-align: center;
+}
+
+#a {
+    display: none;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#b {
+    display: none;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#c {
+    display: none;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#i {
+    color: blue;
+}
+
+#j {
+    color: blue;
+}
+
+#k {
+    color: blue;
+}
+
+#d {
+    display: none;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.start>.button {
+    font-family: "Rambla";
+    color: white;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: "Rambla";
+}
