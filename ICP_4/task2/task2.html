@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ICP4_Task1</title>
+    <!-- attached the style sheet!-->
+    <link href="task2.css" type="text/css" rel="stylesheet">
+    <!-- Bootstrap style sheets only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- JS file  -->
+    <script src=" task2.js "></script>
+
+</head>
+
+
+<body style="background-color:skyblue">
+    <div class="heading">
+        <h1>GitHub User Finder</h1>
+    </div>
+    <br>
+    <br>
+    <div>
+        <!--Input box-->
+        <div class="usersearch">
+            <input id="username" placeholder="Enter a github username" type="text" value="">
+        </div>
+        <br>
+        <!--Submit box-->
+        <button type="submit" id="button" onclick="getVal()">Submit</button>
+    </div>
+    <br>
+    <!--Outputbox-->
+    <div id="profile" class="thumbnail" style="border:solid black">
+        <h5>Name:
+            <p id="Name"></p>
+        </h5>
+
+        <h5>ID:
+            <p id="id1"></p>
+        </h5>
+        <h5>Picture:
+            <p id="photo"></p>
+        </h5>
+        <h5>Link:
+            <p id="link"></p>
+        </h5>
+    </div>
+    <br>
+    <div class="comment" id="comment"></div>
+</body>
+
+</html>
