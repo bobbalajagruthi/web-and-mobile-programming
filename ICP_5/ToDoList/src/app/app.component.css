@@ -1,0 +1,20 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+html {
+    background-color: black;
+}
+
+#heading {
+    padding-left: 35%;
+    text-align: center;
+    color: black;
+}
+
+#inputbox {
+    justify-content: center;
+    text-align: center;
+    padding-left: 15%;
+}
+
+.Button {
+    margin: 5px;
+}
