@@ -1,0 +1,80 @@
+<div class="parent-container" >
+    <div class="child-container">
+        <div class="row">
+            <div class="col-sm-6" style="color:black">
+                <h2><b>Search recipe you would love to eat !!</b></h2>
+            </div>
+            <div class="col-sm-6" style="color:black" >
+                <h2><b>Search for Restaurants near by!!</b></h2>
+            </div>
+        </div>
+        <form>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-3" style="padding-left:5%">
+                        <div class="form-group">
+                            <input #recipe class="form-control" placeholder="Recipe name" type="text" style="width: 300px">
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="padding-left:35%">
+                        <div class="form-group ">
+                            <input #place class="form-control" placeholder="Place nearby" type="text" style="width: 300px">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button (click)="getVenues()" class="btn btn-secondary" style="width: 250px" type="button" style="color:white;background-color:black">Search</button>
+            </div>
+        </form>
+    </div>
+</div><br><br>
+<div class="container">
+    <div class="row">
+        <div *ngIf="!isSeen" class="col-lg-6" id="recipe" >
+            <div class="panel panel-default col-6">
+                <div class="panel-heading"><b>Recipe Names</b></div>
+                <div class="panel-body">
+                    <div *ngFor="let recipee of recipeList" class=" list-group-item clearfix">
+                        <div class="row">
+                            <div class="col-sm-2" style="padding-right:10px;">
+                                <h4 class="list-group-item-heading">{{ recipee.recipe.label }}</h4>
+                            </div>
+                            <div class="col-sm-2">
+                                <h4 class="list-group-item-heading">{{ recipee.recipe.dietLabels }}</h4>
+                            </div>
+                            <div class="col-sm-2">
+                                <h4 class="list-group-item-heading">{{ recipee.recipe.calories|number:'1.0-2'}} Cal</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 class="list-group-item-heading">{{ recipee.recipe.ingredientLines }}</h4>
+                            </div>
+                            <div class="col-sm-2 pull-right text-right">
+                                <a href="{{recipee.recipe.url}}" target="new" class="list-group-item-text"><img style="height:50px; width:50px;" src="{{recipee.recipe.image}}" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="!isDisplay"class="col-lg-6" id="venue" ng-show="check1">
+            <div class="panel panel-default col-6">
+                <div class="panel-heading"><b>Where to get</b></div>
+                <div class="panel-body">
+
+                    <div *ngFor="let venue of venueList" class="list-group-item clearfix">
+                        <div class="row">
+                            <div class="col-sm-6" style="padding-right:10px;">
+                                <h4 class="list-group-item-heading">{{ venue.name }}</h4>
+                            </div>
+                            <div class="col-sm-2 pull-right text-right">
+                                <a href="http://maps.google.com/maps?saddr={{currentLat}},{{currentLong}}
+             &daddr={{venue.location.formattedAddress[0]}},{{venue.location.formattedAddress[1]}},{{venue.location.formattedAddress[2]}}" target="new">
+                                    <img src="../../assets/google.png" style="width: 30px; height: 30px;"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
