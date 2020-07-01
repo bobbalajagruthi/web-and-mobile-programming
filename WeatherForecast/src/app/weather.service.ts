@@ -25,18 +25,18 @@ export class WeatherService {
     return this.http.get(weatherUrl);
   }
 
-  getCurrentWeather(cityName) {
-    let weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=0eb7f6c19ec8c2bf929f74133fcbce7c';
-    return this.http.get(weatherUrl);
+  getCurrentWeather(zipCode) {
+    let currweatherUrl = 'http://api.weatherapi.com/v1/current.json?key=82e683c8bf114bb0afb141616200107&q='+zipCode
+    return this.http.get(currweatherUrl);
   }
 
-  getDailyWeather(cityName,zipCode) {
+  getDailyWeather(cityNme,zipCode) {
     let dailyweatherUrl = 'http://api.weatherapi.com/v1/forecast.json?key=82e683c8bf114bb0afb141616200107&q='+zipCode+'&days=3';
     return this.http.get(dailyweatherUrl);
   }
   getHistoryWeather(oldDate,zipCode) {
-    let dailyweatherUrl = 'http://api.weatherapi.com/v1/history.json?key=82e683c8bf114bb0afb141616200107&q='+zipCode+'&dt='+oldDate;
-    return this.http.get(dailyweatherUrl);
+    let hourweatherUrl = 'http://api.weatherapi.com/v1/history.json?key=82e683c8bf114bb0afb141616200107&q='+zipCode+'&dt='+oldDate;
+    return this.http.get(hourweatherUrl);
   }
 
 

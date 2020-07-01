@@ -35,7 +35,7 @@ export class WeatherComponent implements OnInit {
 
   getWeather(): void {
     this.isSeen=!this.isSeen
-    this.weatherService.getCurrentWeather(this.cityName).subscribe(data => {
+    this.weatherService.getCurrentWeather(this.zipCode).subscribe(data => {
       this.currentWeatherInfo = data;
     })
   }
@@ -43,13 +43,13 @@ export class WeatherComponent implements OnInit {
     this.isDisplayed =!this.isDisplayed
     this.weatherService.getForecastWeather(this.cityName).subscribe(data => {
       this.weatherInfo = data;
-      this.forecastWeatherInfo = this.weatherInfo.list.slice(0, 5);
-      console.log(this.forecastWeatherInfo)
+      console.log(this.weatherInfo)
+      this.forecastWeatherInfo = this.weatherInfo.list.slice(0, 10);
+
     })
   }
   getDailyWeather():void{
     
-    console.log(this.zipCode)
     this.isDisplay =!this.isDisplay
     this.weatherService.getDailyWeather(this.cityName,this.zipCode).subscribe(data => {
       this.dailyWeatherInfo  = data;
@@ -61,14 +61,13 @@ export class WeatherComponent implements OnInit {
       this.time= this.myDate.getTime()- ((24*60*60*1000) * 1)
       this.myDate.setTime(this.time)
       this.oldDate = this.datePipe.transform(this.myDate, 'yyyy-MM-dd')
-      console.log(this.oldDate)
+
 
       this.isDisplaying =!this.isDisplaying
       this.weatherService.getHistoryWeather(this.oldDate,this.zipCode).subscribe(data => {
         this.historyWeatherInfo  = data;
         this.historyforecastWeatherInfo=this.historyWeatherInfo.forecast.forecastday
-        
-       console.log(this.historyforecastWeatherInfo)
+
         
       })
   }
