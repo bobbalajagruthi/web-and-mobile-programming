@@ -54,7 +54,6 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
         LocationListener userCurrentLocationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
-
             }
 
             @Override
@@ -82,11 +81,12 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
         //Getting the current location of the user.
 
         // ICP Task1: Write the code to get the current location of the user
-        userCurrentLocation.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,userCurrentLocationListener);
-        longitude=userCurrentLocation.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLongitude();
-        latitude=userCurrentLocation.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLatitude();
-
-        userCurrentLocationCorodinates=new LatLng(latitute,longitude);
+        userCurrentLocation.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0,
+                userCurrentLocationListener);
+        Location location = userCurrentLocation.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        latitute = location.getLatitude();
+        longitude = location.getLongitude();
+        userCurrentLocationCorodinates = new LatLng(latitute, longitude);
 
         //Getting the address of the user based on latitude and longitude.
         try {

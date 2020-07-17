@@ -5,14 +5,17 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb69f07c-0bdc-498d-aeff-6b69f4e14c21" name="Default Changelist" comment="" />
+    <list default="true" id="5402a846-7f25-40d2-ab09-70cca332ef23" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_XL_API_30" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_30" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -25,28 +28,19 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="layoutResourceFile" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1ee3u0Z2puwy9gHI8XleodIvvD8" />
+  <component name="ProjectId" id="1enf2hagSQ6eZlO3Ydz3Z6WapxV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_XL_API_30" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-16T13:31:48.104Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.-1656997929">
+    <key name="android.template.290143784">
       <recent name="com.example.vijaya.androidhardware" />
     </key>
   </component>
@@ -115,46 +109,38 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cb69f07c-0bdc-498d-aeff-6b69f4e14c21" name="Default Changelist" comment="" />
-      <created>1594668449482</created>
+      <changelist id="5402a846-7f25-40d2-ab09-70cca332ef23" name="Default Changelist" comment="" />
+      <created>1594962071828</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594668449482</updated>
+      <updated>1594962071828</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594937296509">
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594997405748">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1594937296509" />
-    <state x="221" y="96" key="AndroidCreateResourceFileDialog" timestamp="1594913583763">
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1594997405748" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1594962197853">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="221" y="96" key="AndroidCreateResourceFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1594913583763" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1594767576791">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594962197853" />
+    <state width="1236" height="348" key="GridCell.Tab.0.bottom" timestamp="1594998395037">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594767576791" />
-    <state width="1236" height="2" key="GridCell.Tab.0.bottom" timestamp="1594906015480">
+    <state width="1236" height="348" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594998395037" />
+    <state width="1236" height="348" key="GridCell.Tab.0.center" timestamp="1594998395037">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594906015480" />
-    <state width="1236" height="2" key="GridCell.Tab.0.center" timestamp="1594906015480">
+    <state width="1236" height="348" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594998395037" />
+    <state width="1236" height="348" key="GridCell.Tab.0.left" timestamp="1594998395036">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594906015480" />
-    <state width="1236" height="2" key="GridCell.Tab.0.left" timestamp="1594906015479">
+    <state width="1236" height="348" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594998395036" />
+    <state width="1236" height="348" key="GridCell.Tab.0.right" timestamp="1594998395037">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594906015479" />
-    <state width="1236" height="2" key="GridCell.Tab.0.right" timestamp="1594906015480">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594906015480" />
-    <state x="298" y="151" key="run.anything.popup" timestamp="1594916603244">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="298" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1594916603244" />
+    <state width="1236" height="348" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594998395037" />
   </component>
 </project>
