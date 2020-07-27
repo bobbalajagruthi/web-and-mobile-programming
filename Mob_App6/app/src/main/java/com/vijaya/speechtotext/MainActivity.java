@@ -67,29 +67,37 @@ public class MainActivity extends AppCompatActivity {
         Log.i("question", Question);
         mVoiceInputTv.append(Html.fromHtml("<p style=\"color:blue;\">You :"+Question +"</p>"));
         if (Question.contains("Hello") || Question.contains("Hi") || Question.contains("Hey") ) {
+            texttospeech.speak("What is your name", TextToSpeech.QUEUE_FLUSH, null);
             mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : What is your name ?</p>"));
 
         }else if (Question.contains("name")) {
             String name = Question.substring(Question.lastIndexOf(' ') + 1);
             // Setting into Editor
             editor.putString("name", name).apply();
+            texttospeech.speak("Hello "+name, TextToSpeech.QUEUE_FLUSH, null);
             mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : Hello, "+name+"</p>"));
         }else if(Question.contains("not feeling well")){
-        mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : I can understand. Please tell your symptoms in short</p>"));
-    }else if(Question.contains("thank you")){
-        mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : Thank you too "+preferences.getString("name","")+", Take care.</p>"));
-    }else if(Question.contains("time")){
+            texttospeech.speak("I can understand. Please tell your symptoms in short", TextToSpeech.QUEUE_FLUSH, null);
+            mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : I can understand. Please tell your symptoms in short</p>"));
+        }else if(Question.contains("thank you")){
+            texttospeech.speak("Thank you too"+preferences.getString("name","")+"Take care", TextToSpeech.QUEUE_FLUSH, null);
+            mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : Thank you too... "+preferences.getString("name","")+", Take care.</p>"));
+        }else if(Question.contains("time")){
         // Speaking the Time for the User
-        SimpleDateFormat sdfDate =new SimpleDateFormat("HH:mm");//dd/MM/yyyy
-        Date now = new Date();
-        String[] strDate = sdfDate.format(now).split(":");
-        if(strDate[1].contains("00"))strDate[1] = "o'clock";
-        mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : Now the time is : "+sdfDate.format(now)+"</p>"));
-    }else if(Question.contains("medicine")) {
-        mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : Oh, you have fever??. Please take Dolo .</p>"));
-    } else {
-        mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : Sorry, I cant understand that!!! could you please type it again ??</p>"));
-    }
+            SimpleDateFormat sdfDate =new SimpleDateFormat("HH:mm");//dd/MM/yyyy
+            Date now = new Date();
+            String[] strDate = sdfDate.format(now).split(":");
+            Log.i("startCha", String.valueOf(strDate));
+            if(strDate[1].contains("00"))strDate[1] = "o'clock";
+            texttospeech.speak("Now the time is "+sdfDate.format(now), TextToSpeech.QUEUE_FLUSH, null);
+            mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : Now the time is : "+sdfDate.format(now)+"</p>"));
+        }else if(Question.contains("medicine")) {
+            texttospeech.speak("Oh, you have fever??. Please take Dolo ", TextToSpeech.QUEUE_FLUSH, null);
+            mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : Oh, you have fever??. Please take Dolo .</p>"));
+        } else {
+            texttospeech.speak("Sorry I cant understand that, could you please type it again", TextToSpeech.QUEUE_FLUSH, null);
+            mVoiceInputTv.append(Html.fromHtml("<p style=\"color:red;\">Speaker : Sorry, I cant understand that!!! could you please type it again ??</p>"));
+        }
 
 
     }
